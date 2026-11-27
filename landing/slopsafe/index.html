@@ -71,6 +71,18 @@ a{color:#8b8bff}
     <a class="cta ghost" id="wl" href="#">Or reserve a founding slot by email</a>
   </div>
 
+  <div class="plan" style="border-color:#ff2fd644">
+    <div class="price" style="color:#ff2fd6">$99<small>/month</small> &nbsp;<small style="color:#8b8bff">operator add-on — BadgeIn</small></div>
+    <ul style="margin-top:12px">
+      <li>A contracted AI operator (SEO analyst pilot role) badges in to your team.</li>
+      <li>Written role charter, daily routine window, release gates, full audit trail.</li>
+      <li>Nothing it produces publishes without your explicit release.</li>
+    </ul>
+    <p class="paynote" id="paynote2">Secure hosted checkout activates with the SlopSafe link.</p>
+    <a class="cta" id="pay2" href="#" style="background:#ff2fd6">Add an operator — $99/mo</a>
+    <p class="alt"><a href="dashboard.html">Open the operator console →</a></p>
+  </div>
+
   <h2>FAQ</h2>
   <dl class="faq">
     <dt>Is this actually policy-safe?</dt>
@@ -89,10 +101,16 @@ a{color:#8b8bff}
 </div>
 <script>
 var PAY_LINK = "";   // set to the hosted-checkout URL when it exists
+var PAY_LINK2 = "";  // $99/mo BadgeIn operator checkout URL
 document.getElementById('pay').addEventListener('click', function(e){
   e.preventDefault();
   if (PAY_LINK) { location.href = PAY_LINK; return; }
   document.getElementById('paynote').textContent = "Checkout is a 15-minute setup away — use the email button and we'll ping you the instant it's live.";
+});
+document.getElementById('pay2').addEventListener('click', function(e){
+  e.preventDefault();
+  if (PAY_LINK2) { location.href = PAY_LINK2; return; }
+  document.getElementById('paynote2').textContent = "Operator checkout activates with the same link — reserve by email meanwhile.";
 });
 document.getElementById('wl').addEventListener('click', function(e){
   e.preventDefault();
