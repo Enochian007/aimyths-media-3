@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verified Shorts — faceless channels that survive demonetisation</title>
+<meta name="description" content="Fact-checked scripts, QA'd renders, a unique host character. A done-for-you Shorts pipeline built on 100+ shipped videos.">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+body{background:#0b0b10;color:#e8e8ef;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px}
+.badge{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8b8bff;border:1px solid #2a2a45;border-radius:999px;padding:4px 12px;margin-bottom:20px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.01em}
+h1 em{font-style:normal;color:#8b8bff}
+.sub{font-size:18px;color:#a8a8c0;margin:16px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:28px 0}
+.card{background:#12121c;border:1px solid #22223a;border-radius:12px;padding:16px}
+.card b{display:block;color:#fff;font-size:20px}
+.card span{color:#8f8fae;font-size:13px}
+h2{font-size:22px;margin:36px 0 12px}
+ul{padding-left:20px;color:#c4c4d8}
+li{margin:8px 0}
+.cta{display:block;text-align:center;background:#8b8bff;color:#0b0b10;font-weight:700;text-decoration:none;border-radius:12px;padding:16px 20px;font-size:18px;margin:32px 0 8px}
+.cta:hover{background:#a3a3ff}
+.alt{text-align:center;color:#8f8fae;font-size:14px}
+.faq dt{font-weight:700;margin-top:18px}
+.faq dd{color:#a8a8c0;margin:6px 0 0 0}
+footer{margin-top:48px;color:#666680;font-size:13px;border-top:1px solid #1a1a2c;padding-top:20px}
+a{color:#8b8bff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Done-for-you Shorts production</span>
+  <h1>Faceless channels are getting demonetised. <em>Ours don't.</em></h1>
+  <p class="sub">YouTube's inauthentic-content policy (updated July&nbsp;2026) is retiring mass-produced, repetitive AI channels. It draws its line where we already live: original scripts, human-checked facts, and AI used to visualise <b>a unique host character</b> — not a template farm.</p>
+
+  <div class="grid">
+    <div class="card"><b>45+</b><span>shorts shipped on this exact pipeline</span></div>
+    <div class="card"><b>Every script</b><span>fact-checked before it renders, with sources on file</span></div>
+    <div class="card"><b>Every render</b><span>passes automated QA — duration, audio, transcript match, visual integrity</span></div>
+    <div class="card"><b>2–4 / day</b><span>production capacity on commodity hardware</span></div>
+  </div>
+
+  <h2>What you get</h2>
+  <ul>
+    <li>A weekly batch of finished, scheduled-ready Shorts in <em>your</em> niche.</li>
+    <li>An original host character designed for your channel — the pattern the policy names as legitimate.</li>
+    <li>The fact-check file behind every video, so a reviewer challenge never blindsides you.</li>
+    <li>Full pipeline transparency: you see what the QA gates rejected, not just what shipped.</li>
+  </ul>
+
+  <h2>Founding rate</h2>
+  <ul>
+    <li><b>$149/mo</b> — 4 shorts per week, your niche, your host character. First 3 customers only.</li>
+  </ul>
+
+  <a class="cta" id="wl" href="#">Join the waitlist</a>
+  <p class="alt">Clicking opens your email app with everything pre-filled. No forms, no tracking.</p>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>Is this actually policy-safe?</dt>
+    <dd>No automation can guarantee a platform decision. What we guarantee is the opposite of what the policy targets: original scripts with hedged, sourced claims, a unique character, and QA'd output — the same production standard our own channel ships daily. We link the policy in the footer so you can read the line yourself.</dd>
+    <dt>Do you use stock/templated visuals?</dt>
+    <dd>No. Each channel gets a bespoke host character and its own background-theme rotation.</dd>
+    <dt>Who owns the content?</dt>
+    <dd>You do. Scripts, renders, characters, fact-check files — all yours.</dd>
+    <dt>What if a video fails your QA?</dt>
+    <dd>It never ships. Our gates rejected renders for everything from audio spikes to transcript mismatches — that file is your transparency report.</dd>
+  </dl>
+
+  <footer>
+    Policy reference: YouTube Creator Services, <a href="https://support.google.com/youtube/answer/12973664" rel="noopener">inauthentic content policy</a>. Production stack: open-source, MIT-licensed components. Founding customer slots limited while we stay at single-tenant quality.
+  </footer>
+</div>
+<script>
+// scraper-resistant mailto assembly
+document.getElementById('wl').addEventListener('click', function(e){
+  e.preventDefault();
+  var u = ['dcmc9900','gmail.com'].join('@');
+  location.href = 'mailto:' + u + '?subject=' + encodeURIComponent('Waitlist — verified shorts') +
+    '&body=' + encodeURIComponent('Niche/topic idea:\n\nCurrent channel (optional):\n\n');
+});
+</script>
+</body>
+</html>
