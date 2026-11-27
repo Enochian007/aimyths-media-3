@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BadgeIn — AI employees with actual contracts</title>
+<meta name="description" content="Hire contracted AI workers: written role charter, working routine, release gates. $99/mo pilot, governance as the product.">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+body{background:#0b0b10;color:#e8e8ef;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.02em;margin-bottom:24px}
+.logo span{color:#7fd4a8}
+.badge{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7fd4a8;border:1px solid #1f3a2c;border-radius:999px;padding:4px 12px;margin-bottom:20px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.18;letter-spacing:-.01em}
+h1 em{font-style:normal;color:#7fd4a8}
+.sub{font-size:17px;color:#a8a8c0;margin:16px 0 28px}
+h2{font-size:20px;margin:32px 0 10px}
+ul{padding-left:20px;color:#c4c4d8}
+li{margin:8px 0}
+.plan{background:#12121c;border:1px solid #7fd4a855;border-radius:14px;padding:24px;margin:24px 0}
+.plan .price{font-size:34px;font-weight:800}
+.plan .price small{font-size:15px;color:#8f8fae;font-weight:400}
+.cta{display:block;text-align:center;background:#7fd4a8;color:#0b0b10;font-weight:700;text-decoration:none;border-radius:12px;padding:16px 20px;font-size:18px;margin:20px 0 8px}
+.cta:hover{background:#9ce6bd}
+.cta.ghost{background:transparent;color:#7fd4a8;border:1px solid #1f3a2c;font-weight:600;font-size:15px}
+.paynote{text-align:center;color:#8f8fae;font-size:13px;margin-bottom:8px}
+footer{margin-top:48px;color:#666680;font-size:13px;border-top:1px solid #1a1a2c;padding-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">Badge<span>In</span></div>
+  <span class="badge">Pilot — one role</span>
+  <h1>AI employees are easy to hire. <em>These ones badge in with a contract.</em></h1>
+  <p class="sub">Everyone sells AI workers. Nobody hands you the employment terms: a written role charter, working hours, escalation rules and release gates — the things that make an autonomous worker <b>governable</b>. Our fleet has run on exactly this contract structure for months, in production.</p>
+
+  <h2>The pilot: a contracted AI SEO analyst</h2>
+  <ul>
+    <li><b>Role charter</b> — scope of work in writing; no scope creep by prompt drift.</li>
+    <li><b>Working routine</b> — a daily desk window, with a written brief of what it did and why.</li>
+    <li><b>Release gates</b> — nothing publishes without your OK; drafts and recommendations only until released.</li>
+    <li><b>Outcome report</b> — what shipped, what it found, what it needs from you.</li>
+  </ul>
+
+  <h2>Pricing</h2>
+  <div class="plan">
+    <div class="price">$99<small>/month</small> &nbsp;<small style="color:#7fd4a8">first 5 pilot customers</small></div>
+    <ul style="margin-top:12px">
+      <li>One contracted role, fully governed, running on its daily routine.</li>
+      <li>Every output passes a release gate before it reaches you or your audience.</li>
+      <li>Your charter and audit trail stay yours. Cancel any time.</li>
+    </ul>
+    <p class="paynote" id="paynote">Secure hosted checkout activates here the moment our payment link goes live.</p>
+    <a class="cta" id="pay" href="#">Start the pilot — $99/mo</a>
+    <a class="cta ghost" id="wl" href="#">Or request the pilot by email</a>
+  </div>
+
+  <h2>Why governance is the product</h2>
+  <p>Autonomous agents drift. The contract structure — charter, routine, gate — is what turns a clever script into an employee you can actually supervise. You get the audit trail, not just the output.</p>
+
+  <footer>
+    BadgeIn runs on an open-source stack (MIT), hosted free on GitHub Pages. Repriced by demonstrated outcomes after the pilot cohort.
+  </footer>
+</div>
+<script>
+var PAY_LINK = "";   // set to the hosted-checkout URL when it exists
+document.getElementById('pay').addEventListener('click', function(e){
+  e.preventDefault();
+  if (PAY_LINK) { location.href = PAY_LINK; return; }
+  document.getElementById('paynote').textContent = "Checkout is a 15-minute setup away — use the email button and we'll ping you the instant it's live.";
+});
+document.getElementById('wl').addEventListener('click', function(e){
+  e.preventDefault();
+  var u = ['dcmc9900','gmail.com'].join('@');
+  location.href = 'mailto:' + u + '?subject=' + encodeURIComponent('BadgeIn pilot request') +
+    '&body=' + encodeURIComponent('Site/niche to analyse:\n\nWhat outcome would make this worth $99/mo:\n\n');
+});
+</script>
+</body>
+</html>
